@@ -17,12 +17,10 @@ a {
     text-decoration: none;
     padding: 0px 10px;
     font-size: 17px;
-    position: relative;
-    left: -240px;
 }
 
 a:hover {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 p {

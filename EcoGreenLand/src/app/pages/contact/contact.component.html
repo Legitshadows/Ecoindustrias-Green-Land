@@ -1,1 +1,40 @@
-<p>contact works!</p>
+<div class="container">
+
+    <form class="content" [formGroup]="contactoForm" (ngSubmit)="enviarData()">
+        <h3 class="text-center">Contactanos</h3>
+
+            <div class="row">
+
+        <!-- firstname  -->
+        <div class="mt-2 mb-2 col-lg-6 col-6">
+            <input type="text" formControlName="nombres" class="form-control" placeholder="Nombre(s)">
+        </div>
+
+        <!-- lastname  -->
+        <div class="mt-2 mb-2 col-lg-6 col-6">
+            <input type="text" formControlName="apellidos" class="form-control" placeholder="Apellido(s)">
+        </div>
+
+        <!-- correo  -->
+        <div class="mt-2 mb-2 col-lg-12 col-12">
+            <input type="text" formControlName="correo" class="form-control" placeholder="Correo">
+        </div>
+
+        <!-- celular  -->
+        <div class="mt-2 mb-2 col-lg-12 col-12">
+            <input type="text" formControlName="celular" class="form-control" placeholder="Celular">
+        </div>
+
+        <!-- mensaje  -->
+        <div class="mt-2 mb-2 col-lg-12 col-12">
+            <textarea class="form-control" formControlName="mensaje" rows="3" placeholder="Mensaje"></textarea>
+        </div>
+
+        <!-- enviar  -->
+        <div class="col-lg-12 col-12">
+            <button class="btn btn-primary">Enviar</button>
+        </div>
+
+    </div>
+    </form>
+</div>
